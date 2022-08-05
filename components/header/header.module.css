@@ -1,3 +1,9 @@
+.header_area {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  left: 0;
+}
 .header_wraper {
   display: flex;
   flex-wrap: wrap;
@@ -27,6 +33,10 @@
   color: #0a142f;
   padding: 20px 28px;
   display: inline-block;
+  transition: all 0.5s;
+}
+.nav_item a:hover {
+  color: #ffc93e;
 }
 .nav_item:last-child a {
   padding-right: 0;

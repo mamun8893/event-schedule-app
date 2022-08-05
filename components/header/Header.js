@@ -5,7 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const Header = () => {
   return (
-    <div className="header-area">
+    <div className={styles.header_area}>
       <div className="container">
         <div className={styles.header_wraper}>
           <div className={styles.header_left}>
