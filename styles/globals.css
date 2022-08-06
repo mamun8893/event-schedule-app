@@ -66,4 +66,8 @@ h5 {
   .container {
     max-width: 1120px;
   }
+  h1 {
+    font-size: 95px;
+    line-height: 110px;
+  }
 }

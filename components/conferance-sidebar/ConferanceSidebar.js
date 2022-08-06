@@ -5,33 +5,38 @@ import { useState } from "react";
 const sidebarAllItems = [
   {
     id: 1,
-    name: "Organizer",
+    name: "organizer",
   },
   {
     id: 2,
-    name: "Speakers",
+    name: "speakers",
   },
   {
     id: 3,
-    name: "Location",
+    name: "location",
   },
   {
     id: 4,
-    name: "Schedule",
+    name: "schedule",
   },
   {
     id: 5,
-    name: "Sponsors",
+    name: "sponsors",
   },
 ];
 
-const ConferanceSidebar = () => {
+const ConferanceSidebar = ({ handleTabChange }) => {
   const [sidebarItem, setSidebarItem] = useState(sidebarAllItems);
 
   return (
     <div>
       {sidebarItem.map((item) => (
-        <button key={item.id} className={styles.sidebar_item} value="organizer">
+        <button
+          onClick={handleTabChange}
+          key={item.id}
+          className={styles.sidebar_item}
+          value={item.name}
+        >
           <div className={styles.icon}>
             <BsArrowDownUp />
           </div>

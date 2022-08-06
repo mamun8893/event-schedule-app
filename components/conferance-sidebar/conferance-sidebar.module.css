@@ -21,6 +21,7 @@
 }
 .content h3 {
   color: #0a142f;
+  text-transform: capitalize;
 }
 .sidebar_item .icon {
   width: 56px;

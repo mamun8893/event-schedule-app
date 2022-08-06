@@ -3,6 +3,10 @@ import Speakers from "../components/conferance/Speakers";
 import styles from "../styles/conferance.module.css";
 
 const ConferancePage = () => {
+  const handleTabChange = (e) => {
+    console.log(e.target.value);
+    console.log("aaa");
+  };
   return (
     <div className={styles.conferance_wraper}>
       <div className="container">
@@ -15,7 +19,7 @@ const ConferancePage = () => {
         </div>
         <div className={styles.conferance_info_wraper}>
           <div className={styles.conferance_info_left}>
-            <ConferanceSidebar />
+            <ConferanceSidebar handleTabChange={handleTabChange} />
           </div>
           <div className={styles.conferance_info_right}>
             <div className="speakers_item_wrap">

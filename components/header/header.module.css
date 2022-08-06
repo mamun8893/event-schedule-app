@@ -50,3 +50,64 @@
 .header_right svg {
   font-size: 24px;
 }
+
+@media only screen and (max-width: 1399.98px) {
+  .header_area {
+    top: 25px;
+  }
+  .navbar_nav {
+    padding-left: 150px;
+  }
+  .nav_item a {
+    padding: 15px 20px;
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 1199.98px) {
+  .nav_item a {
+    padding: 12px 15px;
+    font-size: 16px;
+  }
+  .navbar_nav {
+    padding-left: 120px;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .navbar_nav {
+    padding-left: 60px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffc93e78;
+    z-index: 99;
+  }
+  .navbar_nav {
+    position: fixed;
+    width: 250px;
+    background-color: #fff;
+    padding-left: 0;
+    display: block;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    z-index: 999;
+    padding-top: 20px;
+    border-radius: 0px 20px 20px 0px;
+  }
+  .navbar_nav.active {
+    transform: translateX(0);
+  }
+  .nav_item a {
+    padding: 8px 12px !important;
+    font-size: 16px;
+  }
+}
