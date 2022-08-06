@@ -30,7 +30,7 @@ const Banner = () => {
                   quam id fermentum..id fermentum.In quis diam turpis quam id
                   fermentum.
                 </p>
-                <button className={styles.btn}>
+                <button type="button" className={styles.btn}>
                   Buy Tickets <BsArrowUpRight />
                 </button>
               </div>
