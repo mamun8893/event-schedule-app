@@ -1,0 +1,44 @@
+.speaker_item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px 16px;
+  margin-bottom: 24px;
+}
+.speaker_item:last-child {
+  margin-bottom: 0;
+}
+.image {
+  flex: 0 0 auto;
+  width: 140px;
+}
+.image img {
+  border-radius: 8px;
+}
+.content {
+  flex: 1;
+  margin-left: 40px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title h3 {
+  font-weight: 700;
+  color: #0a142f;
+}
+
+.title p {
+  color: #0a142f;
+  opacity: 0.5;
+}
+.description p {
+  color: #0a142f;
+  opacity: 0.8;
+}

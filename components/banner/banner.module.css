@@ -4,10 +4,17 @@
   background-position: center center;
   padding-top: 175px;
 }
+.banner_line {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
 .banner_container {
   max-width: 1590px;
   padding: 0px 40px;
   margin: auto;
+  position: relative;
 }
 .banner_wraper {
   display: flex;
@@ -36,6 +43,15 @@
   display: flex;
   margin-top: 30px;
 }
+.image_content .image {
+  position: relative;
+}
+.image_content .shape {
+  position: absolute;
+  bottom: -80px;
+  right: -70px;
+  z-index: -1;
+}
 .banner_content {
   padding-left: 70px;
   flex: 1;
@@ -54,6 +70,14 @@
 .banner_right img {
   max-width: 100%;
   border-radius: 30px;
+}
+.right_image_wrap {
+  position: relative;
+}
+.right_image_wrap .star_img {
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
 }
 
 .btn {
